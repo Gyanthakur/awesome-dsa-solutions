@@ -1,0 +1,42 @@
+[
+  {
+    "name": "hacktoberfest",
+    "color": "FF7518",
+    "description": "This repo is part of Hacktoberfest 2025"
+  },
+  {
+    "name": "hacktoberfest-accepted",
+    "color": "0E8A16",
+    "description": "Pull requests accepted for Hacktoberfest"
+  },
+  {
+    "name": "good first issue",
+    "color": "7057ff",
+    "description": "Good for beginners"
+  },
+  {
+    "name": "enhancement",
+    "color": "1D76DB",
+    "description": "New feature or request"
+  },
+  {
+    "name": "documentation",
+    "color": "0075ca",
+    "description": "Improvements or additions to docs"
+  },
+  {
+    "name": "bug",
+    "color": "d73a4a",
+    "description": "Something isn't working"
+  },
+  {
+    "name": "help wanted",
+    "color": "008672",
+    "description": "Extra attention is needed"
+  },
+  {
+    "name": "question",
+    "color": "d876e3",
+    "description": "Further information is requested"
+  }
+]

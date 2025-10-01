@@ -1,0 +1,16 @@
+name: Auto Label Issues
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  add-labels:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add Good First Issue Label
+        if: contains(github.event.issue.title, 'Add') || contains(github.event.issue.title, 'Fix') || contains(github.event.issue.title, 'Update')
+        uses: actions-ecosystem/action-add-labels@v1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          labels: "good first issue"

@@ -1,0 +1,16 @@
+name: PR Quality Check
+
+on:
+  pull_request_target:
+    types: [opened]
+
+jobs:
+  check-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check PR Description
+        run: |
+          if [ -z "${{ github.event.pull_request.body }}" ]; then
+            echo "❌ PR without description detected."
+            exit 1
+          fi
