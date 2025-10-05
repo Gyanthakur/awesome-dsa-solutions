@@ -1,10 +1,18 @@
-# 🧩 Valid Anagram
-## 📝 Problem
+# Valid Anagram
+## Problem
 
 Given two strings s and t, check whether t is an anagram of s.
 Two strings are anagrams if they contain the same characters with the same frequencies, in any order.
 
-## 🧠 Approach
+## Examples
+
+| **s** | **t** | **Length Match** | **Unique Chars Match** | **Character Counts Match** | **Result** | **Explanation** |
+|-------|-------|------------------|-------------------------|-----------------------------|-------------|-----------------|
+| `aabc` | `abc`  | ❌ | ✅ | ✅ | ❌ | Lengths differ |
+| `aabc` | `abcd` | ✅ | ❌ | ❌ | ❌ | Unique characters differ |
+| `aabc` | `baca` | ✅ | ✅ | ✅ | ✅ | All conditions satisfied |
+
+## Approach
 
 Check lengths:
 If the lengths of s and t differ, they can’t be anagrams.
@@ -15,18 +23,10 @@ If the sets of unique characters differ, they can’t be anagrams.
 Compare character counts:
 For every unique character in s, check that its count in t is the same.
 
-## 🧮 Examples
-
-| **s** | **t** | **Length Match** | **Unique Chars Match** | **Character Counts Match** | **Result** | **Explanation** |
-|-------|-------|------------------|-------------------------|-----------------------------|-------------|-----------------|
-| `aabc` | `abc`  | ❌ | ✅ | ✅ | ❌ | Lengths differ |
-| `aabc` | `abcd` | ✅ | ❌ | ❌ | ❌ | Unique characters differ |
-| `aabc` | `baca` | ✅ | ✅ | ✅ | ✅ | All conditions satisfied |
-
 ### Time Complexity: O(n²)
 
 
-## 🚀 Optimized Solution Approach O(n):
+## Optimized Solution Approach O(n):
 
 Create a HashMap and update +1 for source string and -1 for target string simultaneously then check if all counts balance out.
 
