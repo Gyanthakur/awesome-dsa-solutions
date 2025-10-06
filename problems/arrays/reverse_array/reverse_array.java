@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class ReverseArray {
+public class reverse_array {
     public static void reverseArray(int[] arr) {
         int left = 0, right = arr.length - 1;
         while (left < right) {

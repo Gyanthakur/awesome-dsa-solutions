@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Palindrome {
+public class palindrome {
     public static boolean isAlnum(char c) {
         return Character.isLetterOrDigit(c);
     }
